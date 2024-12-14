@@ -23,9 +23,9 @@ import { ProductsModule } from './products/products.module';
       type: 'postgres',
       host: 'localhost',
       port: 5432,
-      username: 'user',
-      password: 'password',
-      database: 'db',
+      username: 'user', // Insert Your User
+      password: 'password', // Insert Your Password
+      database: 'db', // Insert Your Database Name
       entities: [WeatherEntity],
       synchronize: true,
     }),

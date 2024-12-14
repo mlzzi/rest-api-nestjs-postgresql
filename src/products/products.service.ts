@@ -7,19 +7,17 @@ export class ProductsService {
 
     constructor(
         private readonly httpService: HttpService,
-        
     ) {}
 
     async getProducts(): Promise<any> {
         try {
-            const url = 'https://fakestoreapi.com/products';
-            const response = await firstValueFrom(this.httpService.get(url));
+            const url = 'https://fakestoreapi.com/products'; // API endpoint
+            const response = await firstValueFrom(this.httpService.get(url)); // Send GET request
 
-            return response.data;
+            return response.data; // Return the response data
         } catch (error) {
             console.log(error);
-            throw new NotFoundException('Failed to Retrieve Products');
+            throw new NotFoundException('Failed to Retrieve Products'); // Handle errors
         }
     }
 }
-
