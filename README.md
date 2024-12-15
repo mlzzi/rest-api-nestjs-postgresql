@@ -29,7 +29,7 @@ It also integrates third-party APIs for practical examples.
   * `GET /weather/current?location=<city>`: Fetches current weather for a given location from [WeatherStack API](https://weatherstack.com/).
   * `POST /weather/save?location=<city>`: Saves the weather data of the specified location into the database.
   * `GET /weather/all`: Retrieves all saved weather records.
-* **Database:** Data is stored using TypeORM and Local PostgreSQL (or another configured database).
+* **Database:** Data is stored using TypeORM and Local PostgreSQL (for data persistence).
 
 ### Products Module
 
@@ -43,10 +43,9 @@ It also integrates third-party APIs for practical examples.
 
 ---
 
-## Installation
+### Technologies
 
-### Prerequisites
-
-* [Node.js](https://nodejs.org/) (v16 or later)
+* [Node.js](https://nodejs.org/)
+* [Typescript](https://www.typescriptlang.org/)
 * [NestJS CLI](https://docs.nestjs.com/cli/overview)
-* [PostgreSQL](https://www.postgresql.org/) or other database for persistence
+* [PostgreSQL](https://www.postgresql.org/) database for persistence
