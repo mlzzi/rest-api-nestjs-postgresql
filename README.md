@@ -29,7 +29,7 @@ It also integrates third-party APIs for practical examples.
   * `GET /weather/current?location=<city>`: Fetches current weather for a given location from [WeatherStack API](https://weatherstack.com/).
   * `POST /weather/save?location=<city>`: Saves the weather data of the specified location into the database.
   * `GET /weather/all`: Retrieves all saved weather records.
-* **Database:** Data is stored using TypeORM and SQLite (or another configured database).
+* **Database:** Data is stored using TypeORM and Local PostgreSQL (or another configured database).
 
 ### Products Module
 
